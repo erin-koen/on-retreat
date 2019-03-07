@@ -3,6 +3,7 @@ import logo from "../src/OnRetreat_Logo.png";
 import "./App.css";
 import Header from "./header";
 import Footer from "./Footer";
+import EmailCollector from "./EmailCollector";
 
 class App extends Component {
   constructor() {
@@ -23,7 +24,9 @@ class App extends Component {
               of the world, curated by <br />
               an eclectic group of expert travelers
             </h1>
+            <EmailCollector className="email-input" />
           </div>
+          
           <Footer />
         </header>
       </div>
