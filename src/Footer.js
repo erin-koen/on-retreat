@@ -2,9 +2,10 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-          <div className="contact">CONTACT</div>  
-          <div className="instagram">INSTAGRAM</div>
+        <div className="footer-container">
+          <a href="https://www.instagram.com/on_retreat/" className="contact">Contact</a> 
+
+          <a href="https://www.instagram.com/on_retreat/" className="instagram">Instagram</a>
         </div>
     );
 };
