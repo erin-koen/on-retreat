@@ -17,9 +17,9 @@ class EmailCollector extends React.Component {
   }
 
   render() {
-    // if (!this.state.submitted) {
+    if (!this.state.submitted) {
       return (
-        <form onSubmit={this.clickHandler} className="email-collector" data-netlify="true">
+        <form onSubmit={this.clickHandler} className="email-collector" netlify data-netlify="true">
         <input
           type="text"
           placeholder="  Our first collection goes live soon! Drop us your email to stay in touch."
@@ -29,10 +29,10 @@ class EmailCollector extends React.Component {
         </form> 
       )
     } 
-    // else {
-    //   return (<h2>Thanks! We'll let you know when we've got the goods.</h2>);
-    // }
-//   }
+    else {
+      return (<h2>Thanks! We'll let you know when we've got the goods.</h2>);
+    }
+  }
 }
 
 export default EmailCollector;
