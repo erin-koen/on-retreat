@@ -1,6 +1,8 @@
 .App {
+  max-width: 1024px;
+  margin: 0 auto;
   text-align: center;
-  background-image: url('./Azoresblur.jpg');
+  background-image: url('./Clouds.jpg');
   display: flex;
   justify-content: center;
 }
