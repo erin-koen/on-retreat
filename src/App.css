@@ -32,8 +32,8 @@
   height: 20px;
 }
 
-.email-collector button {
-
+.email-collector h2 {
+  font-weight:  lighter;
 }
 
 .footer-container {
