@@ -1,30 +1,50 @@
 .App {
-  max-width: 1024px;
+  max-width: 85%;
+  min-height: 100vh;
   margin: 0 auto;
-  text-align: center;
-  background-image: url('./Clouds.jpg');
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.header-logo {
-  /* animation: App-logo-spin infinite 20s linear;
-  /* height: 40vmin; */
-  /* pointer-events: none; */
-  max-width: 33%;
-
-}
-
-
-
-.header-container {
-  position: fixed;
-  top: 0;
-  width: 85%;
+.App .header-container {
+  width: 100%;
+  text-align: center;
   border-bottom: 1px solid white;
   padding: 15px 0;
 }
 
+.header-logo {
+  max-width: 33%;
+  margin: 1% 0;
+}
+
+.App .body-copy {
+  max-width: 800px;
+  text-align: center;
+  color: white;
+  font-size: larger;
+  /* font-weight: lighter; */
+  line-height: 20 rem;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.App .body-copy h1 {
+  /* font-size: larger; */
+  font-weight: lighter;
+}
+
+
+.App .body-copy h3 {
+  /* font-size: larger; */
+  font-weight: lighter;
+}
+
+.App .body-copy .cta {
+  max-width: 350px;
+}
 .email-collector input {
   border-radius: 2%;
   margin: 20px;
@@ -33,12 +53,12 @@
 }
 
 .email-collector h2 {
-  font-weight:  lighter;
+  font-weight: lighter;
 }
 
 .footer-container {
   max-width: 1024px;
-  width: 85%;
+  width: 80%;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -48,22 +68,6 @@
 .footer-container a {
   text-decoration: none;
   color: white !important;
-}
-
-.App-body {
-  max-width: 85%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  padding-top:50px;;
-}
-
-.App-body h1 {
-  font-weight: lighter;
 }
 
 .App-link {
