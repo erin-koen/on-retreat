@@ -23,6 +23,7 @@ class EmailCollector extends React.Component {
       return (
         <div className="submission">
           <form
+            name="email-collector"
             method="post" action="#" netlify
             onSubmit={this.clickHandler}
             className="email-collector"
