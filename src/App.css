@@ -11,7 +11,7 @@
   width: 100%;
   text-align: center;
   border-bottom: 1px solid white;
-  padding: 15px 0;
+  padding: 40px 0;
 }
 
 .header-logo {
@@ -21,7 +21,7 @@
 
 @media (max-width: 600px) {
   .App .header-container {
-    padding-top: 20px;
+    padding-top: 50px;
   }
   .header-logo {
     max-width: 40%;
@@ -54,6 +54,12 @@
   max-width: 550px;
   margin-bottom: 30px;
 }
+/* .App .submission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 
 .App .email-collector {
   
@@ -61,17 +67,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* position: fixed;
+  bottom: 130px; */
+
 }
 .App .email-collector .input {
   border-bottom: 1px solid white;
   width: 350px;
 
-}
-.email-collector,
-button {
-  background: transparent;
-  border: none;
-  padding-bottom: 1rem;
 }
 
 .email-collector, img {
@@ -87,14 +90,25 @@ input {
  font-family: 'coline3light';
  font-size: 125%;
 }
-.email-collector,
+.email-collector
 input::placeholder {
   color: white;
   text-align: center;
 } 
 
+.email-collector button {
+  font-family: 'coline3light';
+  font-size: 125%;
+  color: white;
+  background: transparent;
+  padding: 10px;
+  /* border: 1px solid white; */
+
+}
+
 .email-collector h2 {
   font-weight: lighter;
+  color: white;
 }
 
 .footer-container {
@@ -102,11 +116,16 @@ input::placeholder {
   width: 80%;
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  bottom: 20px;
+  /* position: fixed;
+  bottom: 20px; */
 }
 
 .footer-container a {
   text-decoration: none;
   color: white !important;
+}
+
+.insta-icon {
+margin-top: 100px;
+margin-bottom: 50px;
 }

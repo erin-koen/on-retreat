@@ -5,6 +5,8 @@ import Header from "./header";
 import Body from "./Body";
 import Footer from "./Footer";
 import EmailCollector from "./EmailCollector";
+import insta from "../src/insta.png"
+
 
 class App extends Component {
   constructor() {
@@ -18,7 +20,7 @@ class App extends Component {
           <Header />
           <Body />
           <EmailCollector className="email-input" />
-          <Footer />
+          <a href="https://www.instagram.com/on_retreat/"><img className="insta-icon" src={insta} /></a>
       </div>
     );
   }
