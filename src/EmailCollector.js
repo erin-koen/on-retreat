@@ -1,13 +1,13 @@
 import React from "react";
 import emailImg from "../src/Email_icon.png";
-import { encode } from "iconv-lite";
+// import { encode } from "iconv-lite";
 // import { Input, Button } from 'react-strap';
 
-// const encode=(data) => {
-//   return Object.keys(data)
-//       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//       .join("&");
-// }
+const encode=(data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 class EmailCollector extends React.Component {
   constructor() {
@@ -24,7 +24,7 @@ class EmailCollector extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...this.state })
     })
-      .then(() => alert("Success!"))
+      .then(() => this.setState({submitted: true}))
       .catch(error => alert(error));
 
     e.preventDefault();
@@ -36,13 +36,6 @@ class EmailCollector extends React.Component {
     });
   };
 
-  clickHandler = e => {
-    e.preventDefault();
-    this.setState({
-      submitted: true
-    });
-  };
-
   render() {
     if (!this.state.submitted) {
       return (
@@ -51,7 +44,6 @@ class EmailCollector extends React.Component {
             name="contact"
             method="post"
             action="#"
-            onSubmit={this.clickHandler}
             onSubmit={this.handleSubmit}
             className="email-collector"
           >
