@@ -109,6 +109,7 @@ input::placeholder {
 .email-collector h2 {
   font-weight: lighter;
   color: white;
+  text-align: center;
 }
 
 .footer-container {
