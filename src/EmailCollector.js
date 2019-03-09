@@ -1,15 +1,15 @@
 import React from "react";
 import emailImg from "../src/Email_icon.png";
-// import { encode } from "iconv-lite";
+import { encode } from "iconv-lite";
 // import { Input, Button } from 'react-strap';
 
 
 
-const encode=(data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-}
+// const encode=(data) => {
+//   return Object.keys(data)
+//       .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//       .join("&");
+// }
 
 class EmailCollector extends React.Component {
   constructor() {
